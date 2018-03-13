@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def index
     render json: {
-      text: 'Hello World',
+      text: 'Hello World 2',
       ip: Socket.ip_address_list.detect(&:ipv4_private?).try(:ip_address)
     }
   end

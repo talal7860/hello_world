@@ -1,0 +1,9 @@
+---
+development: &defaults
+  adapter:  postgresql
+  database: hello_world_development
+  host:     localhost
+
+test:
+  <<:       *defaults
+  database: hello_world_development
